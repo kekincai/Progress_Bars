@@ -2,7 +2,7 @@ progress.bar.initialize <- function(len) {
     # initialize the bar
     # @param len the length of iter
     if (missing(len)) {
-        stop("len is not initialize.")
+        stop("len is not initialized.")
     }
     .Iter.Len <<- len
     .Iter <<- 1
