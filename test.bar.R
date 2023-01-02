@@ -1,4 +1,4 @@
-len <- 50
+len <- 10
 progress.bar.initialize(len)
 for (i in 1:len) {
     Sys.sleep(1)
