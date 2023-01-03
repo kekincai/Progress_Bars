@@ -5,6 +5,7 @@
 - [x] progress bar
 - [x] average running time
 - [x] left time
+- [x] total time
 
 2. usage
 
