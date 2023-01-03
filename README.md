@@ -15,3 +15,7 @@ progress.bar.finalize()
 ```
 
 see the test.bar.R example.
+It looks like this:
+```
+100 % | ████████████████████████████████████████ |  ave ⏲: 0.91s  left ⏳: 0s  total ⏱: 9.13s  
+```

@@ -20,9 +20,10 @@ progress.bar.show <- function(bar.total = 50) {
         rep(.unBar.char, bar.total - bar.len)
     ), collapse = "")
     time.info <- paste0(
-        "ave runtime: ",
-        round((.Mean.time <<- (.Mean.time * .Iter - difftime(.Time, .Time <<- Sys.time())) / (.Iter <<- .Iter + 1)), 2),
-        "s  left time: ", round((.Mean.time * (.Iter.Len - min(.Iter, .Iter.Len))), 2), "s"
+        "ave \U023F2: ",
+        round((.Mean.time <<- (.Mean.time * .Iter - difftime(.Time, .Time <<- Sys.time())) / (.Iter <<- .Iter + 1)), 2), "s ",
+        " left \U023F3: ", round((.Mean.time * (.Iter.Len - min(.Iter, .Iter.Len))), 2), "s ",
+        " total \U023F1: ", round((.Mean.time * .Iter.Len), 2), "s"
     )
     cat(progress * 100, "%", "|", bar, "| ", time.info, " \r")
     flush.console()
